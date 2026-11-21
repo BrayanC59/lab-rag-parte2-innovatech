@@ -1,0 +1,19 @@
+# Entorno virtual y secretos
+.venv/
+.venv-webui/
+.env
+__pycache__/
+*.py[cod]
+
+# Datos locales de Docker (nunca se versionan)
+ollama_data/
+docker-compose.override.yml
+
+# Resultados pesados de evaluacion (los resumenes si se versionan)
+runs/*.jsonl
+!runs/.gitkeep
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log

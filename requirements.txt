@@ -1,0 +1,10 @@
+# Cliente compatible con la API OpenAI de Open WebUI.
+# NOTA: el requirements.txt del repo original fijaba openai==3.53.0, version que
+# no existe en PyPI (el SDK va por 1.x/2.x). Aqui se corrige el pin.
+openai>=1.60.0,<3.0.0
+
+# Lectura del archivo .env
+python-dotenv>=1.0.1,<2.0.0
+
+# Automatizacion del alta de knowledge base, modelo y API key via REST.
+requests>=2.32.0,<3.0.0
